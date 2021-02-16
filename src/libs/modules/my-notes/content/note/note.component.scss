@@ -1,0 +1,37 @@
+
+.flx-container{
+  // width: 75%;
+  // margin: 0 auto;
+  display: flex;
+  // flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+}
+
+
+.example-card {
+    max-width: 300px;
+    cursor: pointer;
+    margin: 2%;
+  }
+  // .example-header-image {
+  //   // background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  //   background-size: cover;
+  // }
+
+  .primary{
+    background-color: #0275d8;
+  }
+  .info{
+    background-color: #5bc0de;
+  }
+  .danger{
+    background-color: #d9534f;
+  }  
+  .warning{
+    background-color: #f0ad4e;
+  }
+  .success{
+    background-color: #5cb85c;
+  }

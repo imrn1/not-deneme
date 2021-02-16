@@ -1,0 +1,18 @@
+<!-- <p>note-container works!</p> -->
+
+<ng-container  *ngIf="groups.length == 0; else:group" > <!-- tüm notları getirecek değişken tanımla -->
+    <div class="note-container">
+        <!-- <p> *ngIf="groups ==> true </p> <br> -->
+        <app-note></app-note>
+    </div>
+</ng-container>
+<ng-template #group>
+    <ng-container *ngFor="let g of groups" >
+        <!-- <p>*ngIf="groups ==> false</p>  -->
+        <hr>
+        <h2>{{g}}</h2>  <!-- grup adı -->
+        <div class="note-container" >  
+            <app-note [searcByGroup]=g ></app-note>  <!--degişken olarak g'yi gönder filtreleme yap -->
+        </div>
+    </ng-container>
+</ng-template>

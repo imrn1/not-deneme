@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ang-deneme": {
+      "hosting": {
+        "note-app": [
+          "ang-deneme"
+        ]
+      }
+    }
+  }
+}
